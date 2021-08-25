@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html> 
+<html>
   <head>
     <meta charset="utf-8">
     <title>Blog</title>
@@ -13,132 +13,101 @@
     
     <!-- bootstrap icon link -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
-
     <!-- style.css link -->
     <!-- <link rel="stylesheet" href="style.css" /> -->
     <style >
-      
-.share-btn-container a i {
-  font-size: 32px;
-}
-
-.share-btn-container a {
-  margin: 12px 0;
-  transition: 500ms;
-}
-
-.share-btn-container a:hover {
-  transform: scale(1.2);
-}
-
-.share-btn-container .fa-facebook {
-  color: #3b5998;
-}
-
-.share-btn-container .fa-twitter {
-  color: #1da1f2;
-}
-
-.share-btn-container .fa-linkedin {
-  color: #0077b5;
-}
-
-/*.share-btn-container .fa-pinterest {
-  color: #bd081c;
-}
-*/
-.share-btn-container .fa-whatsapp {
-  color: #25d366;
-}
-
-.follow-us-list .share-btn {
-  color: #000000;
-}
-
-
-
-.follow-us-list a i {
-  font-size: 30px;
-  padding: 4px;
-}
-
-.follow-us-list a {
-  margin: 12px 0;
-  transition: 500ms;
-}
-
-
-.follow-us-list a:hover {
-  transform: scale(1.2);
-}
-
-.follow-us-list .fa-facebook {
-  color: #000000;
-}
-
-.follow-us-list .fa-twitter {
-  color: #000000;
-}
-
-.follow-us-list .fa-linkedin {
-  color: #000000;
-}
-
-.follow-us-list .fa-instagram {
-  color: #000000;
-}
-
-.follow-us-list .web {
-  color: #000000;
-}
-
-      
+    
+    .share-btn-container a i {
+    font-size: 32px;
+    }
+    .share-btn-container a {
+    margin: 12px 0;
+    transition: 500ms;
+    }
+    .share-btn-container a:hover {
+    transform: scale(1.2);
+    }
+    .share-btn-container .fa-facebook {
+    color: #3b5998;
+    }
+    .share-btn-container .fa-twitter {
+    color: #1da1f2;
+    }
+    .share-btn-container .fa-linkedin {
+    color: #0077b5;
+    }
+    /*.share-btn-container .fa-pinterest {
+    color: #bd081c;
+    }
+    */
+    .share-btn-container .fa-whatsapp {
+    color: #25d366;
+    }
+    .follow-us-list .share-btn {
+    color: #000000;
+    }
+    .follow-us-list a i {
+    font-size: 30px;
+    padding: 4px;
+    }
+    .follow-us-list a {
+    margin: 12px 0;
+    transition: 500ms;
+    }
+    .follow-us-list a:hover {
+    transform: scale(1.2);
+    }
+    .follow-us-list .fa-facebook {
+    color: #000000;
+    }
+    .follow-us-list .fa-twitter {
+    color: #000000;
+    }
+    .follow-us-list .fa-linkedin {
+    color: #000000;
+    }
+    .follow-us-list .fa-instagram {
+    color: #000000;
+    }
+    .follow-us-list .web {
+    color: #000000;
+    }
+    
     </style>
-
     <script >
-      
-
-function init() {
-  // const pinterestImg = document.querySelector(".pinterest-img");
-  const facebookBtn = document.querySelector(".facebook-btn");
-const twitterBtn = document.querySelector(".twitter-btn");
-// const pinterestBtn = document.querySelector(".pinterest-btn");
-const linkedinBtn = document.querySelector(".linkedin-btn");
-const whatsappBtn = document.querySelector(".whatsapp-btn");
-
-  let postUrl = encodeURI(document.location.href);
-  let postTitle = encodeURI("Hi everyone, please check this out: ");
-  // let postImg = encodeURI(pinterestImg.src);
-
-  facebookBtn.setAttribute(
+    
+    function init() {
+    // const pinterestImg = document.querySelector(".pinterest-img");
+    const facebookBtn = document.querySelector(".facebook-btn");
+    const twitterBtn = document.querySelector(".twitter-btn");
+    // const pinterestBtn = document.querySelector(".pinterest-btn");
+    const linkedinBtn = document.querySelector(".linkedin-btn");
+    const whatsappBtn = document.querySelector(".whatsapp-btn");
+    let postUrl = encodeURI(document.location.href);
+    let postTitle = encodeURI("Hi everyone, check this out: ");
+    // let postImg = encodeURI(pinterestImg.src);
+    facebookBtn.setAttribute(
     "href",
     `https://www.facebook.com/sharer.php?u=${postUrl}`
-  );
-
-  twitterBtn.setAttribute(
+    );
+    twitterBtn.setAttribute(
     "href",
     `https://twitter.com/share?url=${postUrl}&text=${postTitle}`
-  );
-
-  // pinterestBtn.setAttribute(
-  //   "href",
-  //   `https://pinterest.com/pin/create/bookmarklet/?media=${postImg}&url=${postUrl}&description=${postTitle}`
-  // );
-
-  linkedinBtn.setAttribute(
+    );
+    // pinterestBtn.setAttribute(
+    //   "href",
+    //   `https://pinterest.com/pin/create/bookmarklet/?media=${postImg}&url=${postUrl}&description=${postTitle}`
+    // );
+    linkedinBtn.setAttribute(
     "href",
     `https://www.linkedin.com/shareArticle?url=${postUrl}&title=${postTitle}`
-  );
-
-  whatsappBtn.setAttribute(
+    );
+    whatsappBtn.setAttribute(
     "href",
     `https://wa.me/?text=${postTitle} ${postUrl}`
-  );
-}
-
-
+    );
+    }
     </script>
-
     <!-- FONT AWESOME LINK -->
     <link
       rel="stylesheet"
@@ -154,12 +123,17 @@ const whatsappBtn = document.querySelector(".whatsapp-btn");
       <br>
       <!-- Date Section -->
       <div class="container-fluid"><p>Tuesday, August 25, 2020 <i class="far fa-calendar-alt"></i></p></div>
-      <!-- Website logo  -->
+      
       <h5 class="card-header "><center>Advantages Of Renting</center> </h5><br>
       <div class="card mb-3 container-fluid" style="max-width: 540px;">
         <div class="row no-gutters">
           
-          <div class="separator col-md-4" style="clear: both;"><a href="https://rentera.in/" style="display: block; padding: 1em 0; text-align: center; "><img alt="" border="0" data-original-height="100" data-original-width="80" src="rentera.png" width="80"></a></div>
+          <div class="separator col-md-4" style="clear: both;">
+            <a href="https://rentera.in/" style="display: block; padding: 1em 0; text-align: center; ">
+              <!-- Website logo to be inserted here  -->
+              <img alt="" border="0" data-original-height="100" data-original-width="80" src="rentera.png" width="80">
+            </a>
+          </div>
           <div class="col-md-8">
             <div class="card-body">
               <p>Want Something on Rental Basis...?<br>
@@ -178,7 +152,7 @@ const whatsappBtn = document.querySelector(".whatsapp-btn");
           <div class="row justify-content-md-center">
             
             <div class="col-md-4 col-lg-4">
-              
+              <!-- image to be inserted here -->
               <img class = "img-fluid img-responsive img-thumbnail" alt="" src="Blog1Coins.jpg">
               
               
@@ -199,8 +173,8 @@ const whatsappBtn = document.querySelector(".whatsapp-btn");
               •In short, renting is much cheaper than buying something which might be not needed by you for very long. It saves a lot of your money and you can open up to trying many more options related to this.
             </div>
             <div class="col-md-4 col-lg-4">
-              <div class = "first-post ">      
-                  <!-- image to be inserted here -->
+              <div class = "first-post ">
+                <!-- image to be inserted here -->
                 <img class = "img-fluid img-responsive img-thumbnail" alt="" src="Blog1Appliances.jpg">
                 
               </div>
@@ -210,70 +184,70 @@ const whatsappBtn = document.querySelector(".whatsapp-btn");
         <!-- Blog Ending -->
         <!-- Comment Heading -->
         <div class="container"> <p><strong><em>"Comment Below your views about our blog, If you’ve got any queries let us know under. Stay tuned for our next blog! It’s gonna be even better" </em></strong></p> </div>
-         
-        <div class ="follow-us-list container"> 
-      <ul class="list-unstyled text-small ">
-        <li>
-          <a href="https://rentera.in/" target="_blank">
-          <i class="bi bi-globe2 web"></i></a>&nbsp;&nbsp;
-          <a href="https://instagram.com/rentera_official?igshid=1czy9letjsd8i" target="_blank">
-          <i class="fab fa-instagram"></i></a>&nbsp;&nbsp;
-          <a href="https://www.facebook.com/renteraofficial/" target="_blank">
-          <i class="fab fa-facebook"></i></a>&nbsp;&nbsp;
-          <a href="https://www.linkedin.com/company/rent-era" target="_blank" >
-          <i class="fab fa-linkedin"></i></a>&nbsp;&nbsp;
-          <a href="https://twitter.com/rent_era?s=08" target="_blank">
-          <i class="fab fa-twitter"></i></a>
-          &nbsp;&nbsp;
-          <!-- Button trigger modal -->
-          <button type="button" class="btn btn-outline-secondary share-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
-      <i class="fa fa-share" aria-hidden="true"></i> Share
-      </button>
-        </li>
-          
-        </ul>
-      </div>
+        
+        <div class ="follow-us-list container">
+          <ul class="list-unstyled text-small ">
+            <li>
+              <a href="https://rentera.in/" target="_blank">
+              <i class="bi bi-globe2 web"></i></a>&nbsp;&nbsp;
+              <a href="https://instagram.com/rentera_official?igshid=1czy9letjsd8i" target="_blank">
+              <i class="fab fa-instagram"></i></a>&nbsp;&nbsp;
+              <a href="https://www.facebook.com/renteraofficial/" target="_blank">
+              <i class="fab fa-facebook"></i></a>&nbsp;&nbsp;
+              <a href="https://www.linkedin.com/company/rent-era" target="_blank" >
+              <i class="fab fa-linkedin"></i></a>&nbsp;&nbsp;
+              <a href="https://twitter.com/rent_era?s=08" target="_blank">
+              <i class="fab fa-twitter"></i></a>
+              &nbsp;&nbsp;
+              <!-- Button trigger modal -->
+              <button type="button" class="btn btn-outline-secondary share-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              <i class="fa fa-share" aria-hidden="true"></i> Share
+              </button>
+            </li>
+            
+          </ul>
+        </div>
         
         
         <!-- Modal -->
         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">Share</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-              
-              <center>
-              <div class="share-btn-container row justify-content-md-center">
-                <a href="#" class="facebook-btn col" target="_blank">
-                  <i class="fab fa-facebook"></i>
-                </a>
-                <a href="#" class="twitter-btn col" target="_blank">
-                  <i class="fab fa-twitter"></i>
-                </a>
-                <!-- <a href="#" class="pinterest-btn col">
-                  <i class="fab fa-pinterest"></i>
-                </a> -->
-                <a href="#" class="linkedin-btn col" target="_blank">
-                  <i class="fab fa-linkedin"></i>
-                </a>
-                <a href="#" class="whatsapp-btn col" target="_blank">
-                  <i class="fab fa-whatsapp"></i>
-                </a>
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Share</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
-              
-              </center>
-              
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-              
+              <div class="modal-body">
+                
+                <center>
+                <div class="share-btn-container row justify-content-md-center">
+                  <a href="#" class="facebook-btn col" target="_blank">
+                    <i class="fab fa-facebook"></i>
+                  </a>
+                  <a href="#" class="twitter-btn col" target="_blank">
+                    <i class="fab fa-twitter"></i>
+                  </a>
+                  <!-- <a href="#" class="pinterest-btn col">
+                    <i class="fab fa-pinterest"></i>
+                  </a> -->
+                  <a href="#" class="linkedin-btn col" target="_blank">
+                    <i class="fab fa-linkedin"></i>
+                  </a>
+                  <a href="#" class="whatsapp-btn col" target="_blank">
+                    <i class="fab fa-whatsapp"></i>
+                  </a>
+                </div>
+                
+                </center>
+                
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <!-- <script src="main.js"></script> -->
+        <!-- <script src="main.js"></script> -->
       </body>
     </html>
