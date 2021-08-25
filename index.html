@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html> 
   <head>
     <meta charset="utf-8">
     <title>Blog</title>
@@ -15,7 +15,130 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
 
     <!-- style.css link -->
-    <link rel="stylesheet" href="style.css" />
+    <!-- <link rel="stylesheet" href="style.css" /> -->
+    <style >
+      
+.share-btn-container a i {
+  font-size: 32px;
+}
+
+.share-btn-container a {
+  margin: 12px 0;
+  transition: 500ms;
+}
+
+.share-btn-container a:hover {
+  transform: scale(1.2);
+}
+
+.share-btn-container .fa-facebook {
+  color: #3b5998;
+}
+
+.share-btn-container .fa-twitter {
+  color: #1da1f2;
+}
+
+.share-btn-container .fa-linkedin {
+  color: #0077b5;
+}
+
+/*.share-btn-container .fa-pinterest {
+  color: #bd081c;
+}
+*/
+.share-btn-container .fa-whatsapp {
+  color: #25d366;
+}
+
+.follow-us-list .share-btn {
+  color: #000000;
+}
+
+
+
+.follow-us-list a i {
+  font-size: 30px;
+  padding: 4px;
+}
+
+.follow-us-list a {
+  margin: 12px 0;
+  transition: 500ms;
+}
+
+
+.follow-us-list a:hover {
+  transform: scale(1.2);
+}
+
+.follow-us-list .fa-facebook {
+  color: #000000;
+}
+
+.follow-us-list .fa-twitter {
+  color: #000000;
+}
+
+.follow-us-list .fa-linkedin {
+  color: #000000;
+}
+
+.follow-us-list .fa-instagram {
+  color: #000000;
+}
+
+.follow-us-list .web {
+  color: #000000;
+}
+
+      
+    </style>
+
+    <script language="javascript">
+      const facebookBtn = document.querySelector(".facebook-btn");
+const twitterBtn = document.querySelector(".twitter-btn");
+// const pinterestBtn = document.querySelector(".pinterest-btn");
+const linkedinBtn = document.querySelector(".linkedin-btn");
+const whatsappBtn = document.querySelector(".whatsapp-btn");
+
+function init() {
+  // const pinterestImg = document.querySelector(".pinterest-img");
+
+  let postUrl = encodeURI(document.location.href);
+  let postTitle = encodeURI("Hi everyone, please check this out: ");
+  // let postImg = encodeURI(pinterestImg.src);
+
+  facebookBtn.setAttribute(
+    "href",
+    `https://www.facebook.com/sharer.php?u=${postUrl}`
+  );
+
+  twitterBtn.setAttribute(
+    "href",
+    `https://twitter.com/share?url=${postUrl}&text=${postTitle}`
+  );
+
+  // pinterestBtn.setAttribute(
+  //   "href",
+  //   `https://pinterest.com/pin/create/bookmarklet/?media=${postImg}&url=${postUrl}&description=${postTitle}`
+  // );
+
+  linkedinBtn.setAttribute(
+    "href",
+    `https://www.linkedin.com/shareArticle?url=${postUrl}&title=${postTitle}`
+  );
+
+  whatsappBtn.setAttribute(
+    "href",
+    `https://wa.me/?text=${postTitle} ${postUrl}`
+  );
+}
+
+init();
+
+    </script>
+
     <!-- FONT AWESOME LINK -->
     <link
       rel="stylesheet"
@@ -26,7 +149,7 @@
       
       
     </head>
-    <body>
+    <body onload="init()">
       <!-- Header  to be pasted here -->
       <br>
       <!-- Date Section -->
@@ -149,6 +272,6 @@
           </div>
         </div>
       </div>
-      <script src="main.js"></script>
+      <!-- <script src="main.js"></script> -->
       </body>
     </html>
