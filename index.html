@@ -95,15 +95,16 @@
       
     </style>
 
-    <script language="javascript">
-      const facebookBtn = document.querySelector(".facebook-btn");
+    <script >
+      
+
+function init() {
+  // const pinterestImg = document.querySelector(".pinterest-img");
+  const facebookBtn = document.querySelector(".facebook-btn");
 const twitterBtn = document.querySelector(".twitter-btn");
 // const pinterestBtn = document.querySelector(".pinterest-btn");
 const linkedinBtn = document.querySelector(".linkedin-btn");
 const whatsappBtn = document.querySelector(".whatsapp-btn");
-
-function init() {
-  // const pinterestImg = document.querySelector(".pinterest-img");
 
   let postUrl = encodeURI(document.location.href);
   let postTitle = encodeURI("Hi everyone, please check this out: ");
@@ -135,7 +136,6 @@ function init() {
   );
 }
 
-init();
 
     </script>
 
@@ -149,7 +149,7 @@ init();
       
       
     </head>
-    <body onload="init()">
+    <body onLoad="init()">
       <!-- Header  to be pasted here -->
       <br>
       <!-- Date Section -->
